@@ -971,25 +971,26 @@
         function nameHandler() {
             const name = document.getElementById("name")
             if (document.getElementById("name").value.length == 0) {
-                name.classList.add('invalid-placeholder');
-                document.getElementById("invalid-message").innerHTML = language == "id" ? "Nama wajib diisi untuk terhubung ke Agen Kami!" : "Name is required to connect an agent!"
+                                    name.classList.add('invalid-placeholder');
+                                document.getElementById("invalid-message").innerHTML ="အေးဂျင့်နှင့် ဆက်သွယ်ပေးရန် နာမည် ထည့်သွင်းရန် လိုအပ်ပါသည်"
             }
-            else {
-                name.classList.remove("invalid-placeholder");
-                document.getElementById("invalid-message").innerHTML = ""
+                                else {
+                                    name.classList.remove("invalid-placeholder");
+                                document.getElementById("invalid-message").innerHTML = ""
             }
         }
 
-        function emailHandler() {
+                                function emailHandler() {
             const email = document.getElementById("email")
-            if (document.getElementById("email").value.length == 0) {
-                email.classList.add('invalid-placeholder');
-                document.getElementById("invalid-message").innerHTML = language == "id" ? "Email wajib diisi untuk terhubung ke Agen Kami!" : "Email is required to connect an agent!"
+                                if (document.getElementById("email").value.length == 0) {
+                                    email.classList.add('invalid-placeholder');
+                                document.getElementById("invalid-message").innerHTML ="အေးဂျင့်နှင့် ဆက်သွယ်ပေးရန် email လိပ်စာ ထည့်သွင်းရန် လိုအပ်ပါသည်"
             }
-            else {
-                email.classList.remove("invalid-placeholder");
-                document.getElementById("invalid-message").innerHTML = ""
+                                else {
+                                    email.classList.remove("invalid-placeholder");
+                                document.getElementById("invalid-message").innerHTML = ""
             }
+        
         }
 
         // function phoneHandler() {
